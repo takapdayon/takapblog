@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
+
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
@@ -21,12 +22,8 @@ class BlogIndex extends React.Component {
           return (
             <article key={node.fields.slug}>
               <header>
-                <h3
-                  style={{
-                    marginBottom: rhythm(1 / 4),
-                  }}
-                >
-                  <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                <h3>
+                  <Link to={node.fields.slug}>
                     {title}
                   </Link>
                 </h3>

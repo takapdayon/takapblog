@@ -1,0 +1,79 @@
+
+//---------index.js--------------------------
+
+h3{
+    margin-Bottom: rhythm(1 / 4)
+}
+
+link{ 
+    box-Shadow: none 
+} 
+
+//---------blog-post.js--------------------------
+
+h1{
+    margin-Top: rhythm(1);
+    margin-Bottom: 0px
+}
+
+p{
+    scale: (-1 / 5);
+    display: block;
+    margin-Bottom: rhythm(1)
+}
+
+hr{
+    margin-Bottom: rhythm(1)
+}
+
+ul{
+    display: flex;
+    flex-Wrap: wrap;
+    justify-Content: space-between;
+    list-Style: none;
+    padding: 0,
+}
+
+//---------layout.js--------------------------
+
+h1{
+    scale: (1.5);
+    margin-Bottom: rhythm(1.5);
+    margin-Top: 0,
+}
+
+link{
+    box-Shadow: none;
+    text-Decoration: none;
+    color: inherit;
+}
+
+h3{
+    font-Family: Montserrat, sans-serif;
+    margin-Top: 0
+}
+
+.layoutdiv{
+    margin-Left: auto;
+    margin-Right: auto;
+    max-Width: rhythm(24);
+    padding: rhythm(1.5) rhythm(3 / 4);
+}
+
+//---------bio.js--------------------------
+
+.biodiv{
+    display: flex;
+    margin-Bottom: rhythm(2.5);
+}
+
+image{
+    margin-Right: rhythm(1 / 2);
+    margin-Bottom: 0;
+    min-Width: 50;
+    border-Radius: 100%;
+}
+
+img{
+    border-Radius: 50%;
+}
