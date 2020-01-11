@@ -1,79 +1,98 @@
 
 //---------index.js--------------------------
 
-h3{
-    margin-Bottom: rhythm(1 / 4)
+h3 {
+//    margin-Bottom: rhythm(1 / 4);
+    margin-Bottom: 0.25rem;
 }
 
-link{ 
-    box-Shadow: none 
+link { 
+    box-Shadow: none ;
 } 
 
 //---------blog-post.js--------------------------
 
-h1{
-    margin-Top: rhythm(1);
-    margin-Bottom: 0px
+h1 {
+//    margin-Top: rhythm(1);
+    margin-Top: 1rem;
+    margin-Bottom: 0px;
 }
 
-p{
+p {
     scale: (-1 / 5);
     display: block;
-    margin-Bottom: rhythm(1)
+//    margin-Bottom: rhythm(1);
+    margin-Bottom: 1rem;
 }
 
-hr{
-    margin-Bottom: rhythm(1)
+hr {
+//    margin-Bottom: rhythm(1);
+    margin-Bottom: 1rem;
 }
 
-ul{
+ul {
     display: flex;
     flex-Wrap: wrap;
     justify-Content: space-between;
     list-Style: none;
-    padding: 0,
+    padding: 0;
 }
 
 //---------layout.js--------------------------
 
-h1{
+h1 {
     scale: (1.5);
-    margin-Bottom: rhythm(1.5);
-    margin-Top: 0,
+//    margin-Bottom: rhythm(1.5);
+    margin-Bottom: 1.5rem;
+    margin-Top: 0;
 }
 
-link{
+link {
     box-Shadow: none;
     text-Decoration: none;
     color: inherit;
 }
 
-h3{
+h3 {
     font-Family: Montserrat, sans-serif;
-    margin-Top: 0
+    margin-Top: 0;
 }
 
-.layoutdiv{
+.layoutdiv {
     margin-Left: auto;
     margin-Right: auto;
-    max-Width: rhythm(24);
-    padding: rhythm(1.5) rhythm(3 / 4);
+//    max-Width: rhythm(24);
+//    padding: rhythm(1.5) rhythm(3 / 4);
+//    padding: 1.5rem 0.75rem;
 }
 
 //---------bio.js--------------------------
 
-.biodiv{
+.biodiv {
     display: flex;
-    margin-Bottom: rhythm(2.5);
+//    margin-Bottom: rhythm(2.5);
+    margin-Bottom: 2.5rem;
 }
 
-image{
-    margin-Right: rhythm(1 / 2);
+image {
+//    margin-Right: rhythm(1 / 2);
+    margin-Right: 0.5rem;
     margin-Bottom: 0;
     min-Width: 50;
     border-Radius: 100%;
 }
 
-img{
-    border-Radius: 50%;
+img {
+//    border-Radius: 50%;
+}
+
+//---------original--------------------------
+
+.header1{
+    height:22rem;
+    background-color: #f2f2f2;
+}
+
+.aaa{
+    background-color: #f2f2f2;
 }

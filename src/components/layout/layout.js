@@ -1,9 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
+import styles from "./layout.module.scss"
 
-import { rhythm, scale } from "../utils/typography"
+//import { rhythm, scale } from "../../utils/typography"
 
-class Layout extends React.Component {
+export default class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
@@ -11,23 +12,18 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
-        <h1>
-          <Link ClassName="h1link" to={`/`}>
+        <div className="header1">
+          <h1 className={styles.h1link}>
             {title}
-          </Link>
-        </h1>
+          </h1>
+          <p className={styles.ptag}>
+            about engineer/gamer
+          </p>
+        </div>
       )
-    } else {
-      header = (
-        <h3>
-          <Link ClassName="h3link" to={`/`}>
-            {title}
-          </Link>
-        </h3>
-      )
-    }
+    } 
     return (
-      <div ClassName="layoutdiv">
+      <div className="layoutdiv">
         <header>{header}</header>
         <main>{children}</main>
         <footer>
@@ -45,4 +41,4 @@ class Layout extends React.Component {
         </footer>
 */
 
-export default Layout
+//export default Layout

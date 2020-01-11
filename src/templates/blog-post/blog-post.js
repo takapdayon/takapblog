@@ -1,10 +1,12 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import Image from 'gatsby-image';
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
+import Bio from "../../components/bio/bio"
+import Layout from "../../components/layout/layout"
+import SEO from "../../components/seo/seo"
+
+//import { rhythm, scale } from "../../utils/typography"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -20,12 +22,14 @@ class BlogPostTemplate extends React.Component {
         />
         <article>
           <header>
+            {post.frontmatter.hero && <Image fixed={post.frontmatter.hero.childImageSharp.fixed} />}
             <h1>
               {post.frontmatter.title}
             </h1>
             <p>
               {post.frontmatter.date}
             </p>
+
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
           <hr/>
@@ -74,6 +78,13 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        hero {
+          childImageSharp {
+            fixed(width: 512, height:512) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
       }
     }
   }

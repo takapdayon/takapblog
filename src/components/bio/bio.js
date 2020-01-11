@@ -8,8 +8,9 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
+import styles from "./bio.module.scss"
 
-import { rhythm } from "../utils/typography"
+//import { rhythm } from "../../utils/typography"
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -39,9 +40,14 @@ const Bio = () => {
         fixed={data.avatar.childImageSharp.fixed}
         alt={author}
       />
-      <p>
-        エンジニア兼ゲーマー
+      <p className={styles.ptag}>
+        技術系だけでなくE-sport(主にLOL)<br></br>に関しての記事も連載します
       </p>
+      <ul className={styles.icons}>
+        <li className={styles.aicon}>
+
+        </li>
+      </ul>
     </div>
   )
 }
