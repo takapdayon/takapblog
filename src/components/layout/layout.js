@@ -12,7 +12,7 @@ export default class Layout extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
-        <div className="header1">
+        <div className={styles.topheader}>
           <h1 className={styles.h1link}>
             {title}
           </h1>
@@ -27,12 +27,15 @@ export default class Layout extends React.Component {
         <header>{header}</header>
         <main>{children}</main>
         <footer>
-          Copyright©Takafumi Tsukada. All Rights Reserved.
+          <div className={styles.all_footer}>
+            Copyright © takaP.
+          </div>
         </footer>
       </div>
     )
   }
 }
+
 /*
         <footer>
           © {new Date().getFullYear()}, Built with

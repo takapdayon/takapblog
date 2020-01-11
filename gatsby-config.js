@@ -6,6 +6,7 @@ module.exports = {
     siteUrl: `https://takapdayon.github.io/blog`,
     social: {
       twitter: `takapdayon`,
+      github: `takapdayon`,
     },
   },
   plugins: [

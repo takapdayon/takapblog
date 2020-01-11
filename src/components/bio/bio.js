@@ -27,6 +27,7 @@ const Bio = () => {
           author
           social {
             twitter
+            github
           }
         }
       }
@@ -35,7 +36,7 @@ const Bio = () => {
 
   const { author, social } = data.site.siteMetadata
   return (
-    <div className="biodiv">
+    <div className={styles.home_container_sidebar}>
       <Image
         fixed={data.avatar.childImageSharp.fixed}
         alt={author}
@@ -45,7 +46,6 @@ const Bio = () => {
       </p>
       <ul className={styles.icons}>
         <li className={styles.aicon}>
-
         </li>
       </ul>
     </div>
