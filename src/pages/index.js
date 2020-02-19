@@ -4,8 +4,8 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio/bio"
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo/seo"
+import Image from 'gatsby-image';
 import { rhythm } from "../utils/typography"
-
 
 class BlogIndex extends React.Component {
   render() {
@@ -17,26 +17,35 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
         <div className="home_container">
-          <Bio />
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
               <article className="home_container_post" key={node.fields.slug}>
-                <header>
-                  <h3>
+                <Link className="post_name" to={node.fields.slug}>
+                  <div className="post_card_image" >
+                    <Image fixed={node.frontmatter.hero.childImageSharp.fixed} />
+                  </div>
+                </Link>
+                  <div className="post_content">
                     <Link to={node.fields.slug}>
-                      {title}
+                      <header>
+                        <h3 className="post_title">
+                            {title}
+                          
+                        </h3>
+                      </header>
+                      <section className="post_heading">
+                        <p
+                          dangerouslySetInnerHTML={{
+                            __html: node.frontmatter.description || node.excerpt,
+                          }}
+                        />
+                      </section>
                     </Link>
-                  </h3>
+                  </div>
+                <div className="post_data">
                   <small>{node.frontmatter.date}</small>
-                </header>
-                <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: node.frontmatter.description || node.excerpt,
-                    }}
-                  />
-                </section>
+                </div>
               </article>
             )
           })}
@@ -66,6 +75,14 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            tags
+            hero {
+              childImageSharp {
+                fixed(width: 400, height:250) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
           }
         }
       }
