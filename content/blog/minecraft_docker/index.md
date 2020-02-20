@@ -27,7 +27,7 @@ docker-hubに先人の神様が作り上げてくれたimageがあるためこ�
 [itzg/minecraft-server](https://hub.docker.com/r/itzg/minecraft-server)
 
 ### ディレクトリ構造
->pokemon<br>
+>root<br>
 >|--docker-compose.yml<br>
 >|--25565<br>
 >|　　|--data<br>
