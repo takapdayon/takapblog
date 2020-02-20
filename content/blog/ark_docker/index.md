@@ -25,6 +25,11 @@ docker-composeのポートを変えるだけで簡単にarkのサーバを立ち
 そのため、用意するものはdocker-composeのみです。<br>
 [turzam/ark](https://hub.docker.com/r/turzam/ark)
 
+
+しょぼいサーバ等で立てる場合、6GBに届かない際は<br>
+スワップメモリを設定してくださいね！
+(今回この設定自分は行っていないため省きます。)
+
 ### ディレクトリ構造
 >root<br>
 >|--docker-compose.yml<br>
