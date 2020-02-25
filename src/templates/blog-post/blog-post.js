@@ -6,6 +6,7 @@ import Bio from "../../components/bio/bio"
 import Layout from "../../components/layout/layout"
 import SEO from "../../components/seo/seo"
 import styles from "./blog-post.module.scss"
+import Share from "../../components/share/share";
 
 //import { rhythm, scale } from "../../utils/typography"
 
@@ -13,7 +14,8 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
-    const { previous, next } = this.props.pageContext
+    const siteUrl = this.props.data.site.siteMetadata.siteUrl
+    const { previous, next , slug } = this.props.pageContext
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -38,6 +40,7 @@ class BlogPostTemplate extends React.Component {
               <section dangerouslySetInnerHTML={{ __html: post.html }} />
               <hr/>
             </article>
+            <Share  postNode={post} postPath={slug} siteUrl={siteUrl}/>
           </div>
         </div>
       </Layout>
@@ -52,6 +55,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        siteUrl
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -95,4 +99,5 @@ export const pageQuery = graphql`
                 </ul>
               </nav>
             </section>
+            <Share  postNode={post} postPath={slug} />
 */
