@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import styles from "./share.module.scss"
 import {
   FacebookShareButton,
   TwitterShareButton,
@@ -15,10 +16,10 @@ class Share extends Component {
     const { postNode, postPath, siteUrl } = this.props;
     const post = postNode.frontmatter;
     const site = siteUrl + postPath;
-    const iconSize = 36;
+    const iconSize = 48;
 
     return (
-      <div className="social-links">
+      <div className={styles.sociallinks}>
         <TwitterShareButton url={site} title={post.title} via="takapdayon">
           <TwitterIcon round size={iconSize} />
         </TwitterShareButton>
