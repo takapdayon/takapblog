@@ -22,7 +22,7 @@ class BlogPostTemplate extends React.Component {
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
-          image={post.frontmatter.hero.childImageSharp.fluid}
+          image={post.frontmatter.hero.childImageSharp.fluid.src}
         />
         <div className={styles.blog_head}>
           <div className={styles.blog}>
@@ -70,6 +70,7 @@ export const pageQuery = graphql`
         hero {
           childImageSharp {
             fluid(maxWidth: 640) {
+              src
               ...GatsbyImageSharpFluid
             }
           }

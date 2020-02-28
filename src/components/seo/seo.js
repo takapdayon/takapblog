@@ -19,6 +19,7 @@ function SEO({ description, lang, meta, title , image}) {
             title
             description
             author
+            siteUrl
           }
         }
       }
@@ -26,7 +27,7 @@ function SEO({ description, lang, meta, title , image}) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-
+  const publicsiteurl = site.siteMetadata.siteUrl + image
   return (
     <Helmet
       htmlAttributes={{
@@ -54,7 +55,7 @@ function SEO({ description, lang, meta, title , image}) {
         },
         {
           property: `og:image`,
-          content: `image`,
+          content: publicsiteurl,
         },
         {
           name: `twitter:card`,
@@ -81,6 +82,7 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
+  image: null,
 }
 
 SEO.propTypes = {
@@ -88,6 +90,7 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
+  image: PropTypes.string,
 }
 
 export default SEO
