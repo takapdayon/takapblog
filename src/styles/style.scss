@@ -12,9 +12,40 @@ h3 {
     margin-Bottom: 0.25rem;
 }
 
-link { 
+link {
     box-Shadow: none ;
-} 
+}
+
+//---------プラグイン.js--------------------------
+.gatsby-highlight-code-line {
+    background-color: #feb;
+    display: block;
+    margin-right: -1em;
+    margin-left: -1em;
+    padding-right: 1em;
+    padding-left: 0.75em;
+    border-left: 0.25em solid #f99;
+  }
+  
+  .gatsby-highlight {
+    background-color: #fdf6e3;
+    border-radius: 0.3em;
+    margin: 0.5em 0;
+    padding: 1em;
+    overflow: auto;
+  }
+  
+  .gatsby-highlight pre[class*="language-"] {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    overflow: initial;
+    float: left; /* 1 */
+    min-width: 100%; /* 2 */
+  }
+  .gatsby-highlight pre[class*="language-"].line-numbers {
+    padding-left: 2.8em; /* 3 */
+  }
 
 //---------blog-post.js--------------------------
 
@@ -55,7 +86,7 @@ h1 {
 
 link {
     box-Shadow: none;
-    text-Decoration: none;
+    text-decoration: none;
     color: inherit;
 }
 
@@ -131,6 +162,7 @@ img {
 .post_content{
     padding: 1rem 2rem;
     vertical-align: middle;
+    height: 10rem;
 }
 
 .post_data{
@@ -140,4 +172,16 @@ img {
 
 .post_title{
     font-size: 1.5rem;
+    padding-bottom:.5rem;
+    color: #444;
 }
+
+.post_heading{
+    color: #414141;
+    line-height: 1.5rem;
+}
+
+a:hover{
+    text-decoration:none;
+}
+

@@ -27,7 +27,7 @@ class BlogPostTemplate extends React.Component {
               <div className={styles.topimage}>
                 {post.frontmatter.hero && <Image fixed={post.frontmatter.hero.childImageSharp.fixed} />}
               </div>
-              <h1>
+              <h1 className={styles.blog_title}>
                 {post.frontmatter.title}
               </h1>
               <p>
@@ -83,7 +83,7 @@ export const pageQuery = graphql`
         description
         hero {
           childImageSharp {
-            fixed(width: 512, height:512) {
+            fixed(width: 640, height:400) {
               ...GatsbyImageSharpFixed
             }
           }

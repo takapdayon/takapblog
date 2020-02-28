@@ -1,4 +1,5 @@
 import React from "react"
+import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
 import { Link } from "gatsby"
 import styles from "./layout.module.scss"
 

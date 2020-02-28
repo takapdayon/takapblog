@@ -26,23 +26,22 @@ class BlogIndex extends React.Component {
                     <Image fixed={node.frontmatter.hero.childImageSharp.fixed} />
                   </div>
                 </Link>
+                <Link to={node.fields.slug}>
                   <div className="post_content">
-                    <Link to={node.fields.slug}>
-                      <header>
-                        <h3 className="post_title">
-                            {title}
-                          
-                        </h3>
-                      </header>
-                      <section className="post_heading">
-                        <p
-                          dangerouslySetInnerHTML={{
-                            __html: node.frontmatter.description || node.excerpt,
-                          }}
-                        />
-                      </section>
-                    </Link>
+                    <header>
+                      <h3 className="post_title">
+                          {title}
+                      </h3>
+                    </header>
+                    <section className="post_heading">
+                      <p
+                        dangerouslySetInnerHTML={{
+                          __html: node.frontmatter.description || node.excerpt,
+                        }}
+                      />
+                    </section>
                   </div>
+                </Link>
                 <div className="post_data">
                   <small>{node.frontmatter.date}</small>
                 </div>
