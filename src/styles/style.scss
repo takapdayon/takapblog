@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes&display=swap');
 
 body{
     background-color: #f2f2f2;
@@ -5,95 +6,6 @@ body{
 
 }
 
-//---------index.js--------------------------
-
-h3 {
-//    margin-Bottom: rhythm(1 / 4);
-    margin-Bottom: 0.25rem;
-}
-
-link {
-    box-Shadow: none ;
-}
-
-//---------プラグイン.js--------------------------
-.gatsby-highlight-code-line {
-    background-color: #feb;
-    display: block;
-    margin-right: -1em;
-    margin-left: -1em;
-    padding-right: 1em;
-    padding-left: 0.75em;
-    border-left: 0.25em solid #f99;
-  }
-  
-  .gatsby-highlight {
-    background-color: #fdf6e3;
-    border-radius: 0.3em;
-    margin: 0.5em 0;
-    padding: 1em;
-    overflow: auto;
-  }
-  
-  .gatsby-highlight pre[class*="language-"] {
-    background-color: transparent;
-    margin: 0;
-    padding: 0;
-    overflow: initial;
-    float: left; /* 1 */
-    min-width: 100%; /* 2 */
-  }
-  .gatsby-highlight pre[class*="language-"].line-numbers {
-    padding-left: 2.8em; /* 3 */
-  }
-
-//---------blog-post.js--------------------------
-
-h1 {
-//    margin-Top: rhythm(1);
-    margin-Top: 1rem;
-    margin-Bottom: 0px;
-}
-
-p {
-    scale: (-1 / 5);
-    display: block;
-//    margin-Bottom: rhythm(1);
-    margin-Bottom: 1rem;
-}
-
-hr {
-//    margin-Bottom: rhythm(1);
-    margin-Bottom: 1rem;
-}
-
-ul {
-    display: flex;
-    flex-Wrap: wrap;
-    justify-Content: space-between;
-    list-Style: none;
-    padding: 0;
-}
-
-//---------layout.js--------------------------
-
-h1 {
-    scale: (.5);
-//    margin-Bottom: rhythm(1.5);
-    margin-Bottom: 1.5rem;
-    margin-Top: 0;
-}
-
-link {
-    box-Shadow: none;
-    text-decoration: none;
-    color: inherit;
-}
-
-h3 {
-    font-Family: Montserrat, sans-serif;
-    margin-Top: 0;
-}
 
 .layoutdiv {
     margin-Left: auto;
@@ -172,7 +84,8 @@ img {
 
 .post_title{
     font-size: 1.5rem;
-    padding-bottom:.5rem;
+    font-weight:bold;
+    padding-bottom:1rem;
     color: #444;
 }
 

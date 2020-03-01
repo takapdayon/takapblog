@@ -1,7 +1,7 @@
 import React from "react"
-import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
 import { Link } from "gatsby"
 import styles from "./layout.module.scss"
+import Logoheader from "../logoheader/logoheader"
 
 //import { rhythm, scale } from "../../utils/typography"
 
@@ -13,16 +13,24 @@ export default class Layout extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
-        <div className={styles.topheader}>
-          <h1 className={styles.h1link}>
-            {title}
-          </h1>
-          <p className={styles.ptag}>
-            about engineer/gamer
-          </p>
+        <div>
+          <Logoheader />
+          <div className={styles.topheader}>
+            <div className={styles.h1link}>
+              {title}
+            </div>
+            <p className={styles.ptag}>
+              about engineer/gamer
+            </p>
+          </div>
         </div>
       )
-    } 
+    }
+    else {
+      header = (
+        <Logoheader />
+      )
+    }
     return (
       <div className="layoutdiv">
         <header>{header}</header>

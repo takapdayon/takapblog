@@ -29,9 +29,9 @@ class BlogIndex extends React.Component {
                 <Link to={node.fields.slug}>
                   <div className="post_content">
                     <header>
-                      <h3 className="post_title">
+                      <div className="post_title">
                           {title}
-                      </h3>
+                      </div>
                     </header>
                     <section className="post_heading">
                       <p

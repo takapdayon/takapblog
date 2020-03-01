@@ -1,0 +1,43 @@
+
+.site_header{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    padding: 0 .75rem;
+    z-index: 10;
+    color: #fff;
+    background: linear-gradient(to right, #314755, #26a0da); 
+    box-shadow: 0 4px 24px rgba(51,51,51,.5);
+}
+.logo_nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40rem;
+}
+
+.site_logo{
+    font-family: 'Great Vibes', ;
+    font-size:2rem;
+    color: #000;
+    width: 6rem;
+    margin:auto 0rem;
+    color:#fff;
+}
+.gnav__menu{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.gnav__menu__item{
+    padding:0rem 1rem;
+    margin:auto 0rem;
+}
+.gnav__menu__item a{
+    color:#fff;
+    text-decoration: none;
+}

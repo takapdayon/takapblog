@@ -67,7 +67,7 @@ print(test(1))
 
 ![okayu](http://i.imgur.com/Jjwsc.jpg)
 
-![test](title6.jpg)
+![test](/title6.jpg)
 
 ---
 ***
