@@ -22,9 +22,9 @@ class BlogIndex extends React.Component {
             return (
               <article className="home_container_post" key={node.fields.slug}>
                 <Link className="post_name" to={node.fields.slug}>
-                  <div className="post_card_image" >
-                    <Image fixed={node.frontmatter.hero.childImageSharp.fixed} />
-                  </div>
+                  <figure class="post_card_image">
+                    <Image fluid={node.frontmatter.hero.childImageSharp.fluid} />
+                  </figure>
                 </Link>
                 <Link to={node.fields.slug}>
                   <div className="post_content">
@@ -77,8 +77,8 @@ export const pageQuery = graphql`
             tags
             hero {
               childImageSharp {
-                fixed(width: 400, height:250) {
-                  ...GatsbyImageSharpFixed
+                fluid(maxWidth: 700) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }

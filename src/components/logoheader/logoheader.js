@@ -7,8 +7,8 @@ class Logoheader extends React.Component {
     render() {
         return (
             <div className={styles.site_header}>
-                <div className={styles.logo_nav}>
                 <div className={styles.site_logo}>takaP</div>
+                <div className={styles.logo_nav}>
                     <nav className={styles.gnav}>
                         <ul className={styles.gnav__menu}>
                             <li className={styles.gnav__menu__item}><a href="/">Home</a></li>

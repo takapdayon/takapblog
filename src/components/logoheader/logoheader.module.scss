@@ -2,7 +2,6 @@
 .site_header{
     position: fixed;
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 100%;
     height: 3rem;
@@ -16,13 +15,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40rem;
+    width: 100%;
 }
 
 .site_logo{
     font-family: 'Great Vibes', ;
     font-size:2rem;
-    color: #000;
     width: 6rem;
     margin:auto 0rem;
     color:#fff;

@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes&display=swap');
 
+
+//html { font-size: calc(16px + 0.25vw) }
+
 body{
     background-color: #f2f2f2;
     line-height: 1.5rem;
@@ -33,11 +36,7 @@ image {
 
 img {
 //    border-Radius: 50%;
-}
-
-.post_card_image{
-    width:400px;
-    height:250px;
+    max-width: 100%;
 }
 
 //---------original--------------------------
@@ -51,10 +50,12 @@ img {
 
 
 .home_container{
-    max-width: 1264px;
-    margin: 4em auto;
+    max-width: 1296px;
+    margin: 4rem auto;
+    padding: 0 1rem;
     display: grid;
-    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    //grid-template-columns: 3fr 3fr 3fr;
     grid-template-rows: auto;
     grid-gap: 2rem;
 }
@@ -98,3 +99,6 @@ a:hover{
     text-decoration:none;
 }
 
+figure{
+    margin:0;
+}
