@@ -3,7 +3,7 @@ module.exports = {
     title: `takaP Blog`,
     author: `takaP`,
     description: `備忘録・また情報発信として活用していきます`,
-    siteUrl: `https://takapdayon.github.io/blog`,
+    siteUrl: `https://takap.net`,
     social: {
       twitter: `takapdayon`,
       github: `takapdayon`,
