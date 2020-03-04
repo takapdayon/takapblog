@@ -1,2 +1,4 @@
 npm install --save typography typography-theme-github
 npm install --save node-sass gatsby-plugin-sass
+npm install --save gatsby-plugin-google-analytics
+npm install --save react-share 
