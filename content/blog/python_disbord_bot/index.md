@@ -1,6 +1,6 @@
 ---
 title: dockerでdiscord bot開発環境構築
-date: "2020-03-03T23:46:37.121Z"
+date: "2020-03-03T12:46:37.121Z"
 description: dockerでdiscord botの開発環境を構築するための記事です。開発言語はpythonを前提に進めます。
 tags: ["esport","LOL"]
 hero: discord.jpg
