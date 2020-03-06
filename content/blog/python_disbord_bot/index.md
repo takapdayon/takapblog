@@ -46,7 +46,7 @@ RUN python -m pip install discord.py
 
 #### docker-compose.yml
 
-```docker
+```yml
 version: "3"
 services:
   python:
@@ -74,7 +74,7 @@ qiita記事側のcode-server設定だと、編集等できない可能性
 
 #### compose upする
 
-```shell
+```sh
 $docker-compose up -d
 ```
 pwは無効で設定してありますので
@@ -106,10 +106,10 @@ client.run(TOKEN)
 ### pythonコンテナ内で実行
 pythonコンテナに入り、上記で作成したdiscordbotを実行してみてください
 ```shell
-$ docker-compose exec python /bin/bash
+$docker-compose exec python /bin/bash
 ```
 
 ```shell
-$ python ファイル名.py
+$python ファイル名.py
 ```
 実際discordにてbot導入し返答があれば成功です。
