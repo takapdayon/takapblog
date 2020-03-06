@@ -37,7 +37,7 @@ dataは空ディレクトリでOK<br>
 modsは入れたいmodsがあればここに入れてください。
 
 ### docker-compose.yml
-```
+```docker
 version: '3'
 services:
     minecraft-server:
@@ -66,7 +66,7 @@ volumeでコンテナ内に同期させ、/dataでデータを永続化してま
 <br>
 
 ### 実行
-```
+```bash
 $ docker-compose up -d
 ```
 
