@@ -46,7 +46,7 @@ from models import *
 
 def get_choice_model_deta():
     choice_data_query = Choice.objects.all()
-    Choice_list = choice_data_query.values_list('form_id', 'form_name')
+    Choice_list = choice_data_query.values_list('チェック値', '任意')
     return Choice_list
 
 class Choice(forms.Form):
