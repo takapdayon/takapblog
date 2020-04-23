@@ -2,7 +2,7 @@
 title: virtualboxのNot in a hypervisor partition (HVP=0)の解決法
 date: "2020-04-22T23:46:37.121Z"
 description: なんか、なんでか度々virtualbox起動するとなるんですよねー・・・
-tags: ["atcoder","python"]
+tags: ["virtualbox",]
 hero: virtualbox.jpg
 ---
 
@@ -16,7 +16,6 @@ hero: virtualbox.jpg
 
 あーまたか、またこれか(n回目)
 なんでかちょくちょくなるんですよね今日はその解決法2つ挙げたいと思います。
-virtualboxをちょいぶりくらいに
 
 ## 解決法
 
