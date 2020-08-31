@@ -9,13 +9,13 @@ hero: virtualbox.jpg
 ## 問題
 
 あー、blog記事書くために仮想環境立ち上げて、docker立ち上げてやるかぁ
-とか思って起動したんすよvirtualbox<br>
+と思ってvirtualboxを起動...<br>
 そしたらこれ
 >Not in a hypervisor partition (HVP=0) <br>
 >AMD-V is disabled in the BIOS
 
-あーまたか、またこれか(n回目)
-なんでかちょくちょくなるんですよね今日はその解決法2つ挙げたいと思います。
+(あーまたか、またこれか(n回目)
+なんでかちょくちょくなるんですよね...今日はその解決法2つ挙げたいと思います。
 
 ## 解決法
 
@@ -23,5 +23,5 @@ hero: virtualbox.jpg
 1. BIOSのVirtualization(AMDはSVM)がdisableになってないか
 2. hyper-Vが有効になっていないか
 
-僕の場合は大体1ですね、なんでか勝手にdisableに変わっちゃうんですよね
+僕の場合は大体1ですね、勝手にdisableに変わっちゃうんですよね(なんでだろう...)
 
